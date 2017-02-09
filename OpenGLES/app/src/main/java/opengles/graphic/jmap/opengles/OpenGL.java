@@ -25,7 +25,7 @@ public class OpenGL extends AppCompatActivity {
 
         if(supportEs){
             glSurfaceView.setEGLContextClientVersion(2);
-            glSurfaceView.setRenderer(new OpenGLRenderer());
+            glSurfaceView.setRenderer(new OpenGLRenderer(this));
             rendererSet = true;
         }
         setContentView(glSurfaceView);
